@@ -28,8 +28,12 @@ using the reactor main loop this library is used to poll memory values frequentl
     pi_led = LED(17)
     pi_button = Button(27)
     
+    #create an output object for Q0.1 and an input button on I0.6
     plc.output = plc.Output(0, 1)
     plc.button = plc.Input(0, 6)
+    #can do this as well:
+    # output = plc.Output(0,1)
+    # button = plc.Input(0,6)
     
     #toggle plc.output when button on pi is pressed
     pi_button.when_pressed = plc.output.toggle
