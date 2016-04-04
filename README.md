@@ -1,5 +1,5 @@
 # snap7zero
-snap7-python helper library for raspberry pi
+snap7-python helper library for raspberry pi inspired by gpiozero.
 
 requires snap7-python, twisted & gpiozero
 
