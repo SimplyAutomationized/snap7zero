@@ -257,7 +257,7 @@ class S7PLC(Client):
     def AnalogInput(self, startbyte):
         return MemoryObject('Word', I, self, startbyte)
 
-    def hand_off_auto_switch(self, input1_byte, input1_bit, input2_byte, input2_bit):
+    def HOA_switch(self, input1_byte, input1_bit, input2_byte, input2_bit):
         # TODO
         """
         Read status of HOA Switch

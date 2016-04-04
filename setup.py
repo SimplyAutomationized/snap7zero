@@ -9,6 +9,6 @@ setup(
         author='SimplyAutomationized',
         author_email='nextabyte@gmail.com',
         description='snap7-python helper library',
-        install_requires=["twisted","python-snap7","ujson"],
+        install_requires=["twisted","python-snap7","ujson","gpiozero"],
 
 )
