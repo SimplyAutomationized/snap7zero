@@ -71,6 +71,8 @@ class MemoryObject(object):
         self.write_queue.append(data)
         if not reactor.running:
             self.write()
+            sleep(.01)
+            self.read()
 
     def write(self):
         data = self.write_queue.pop(0)
